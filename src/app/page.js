@@ -17,7 +17,7 @@ The goal of Baila! is to support and celebrate the joy of dancing, while helpi
         
         </div>
       </main>
-      
+   
 
     </div>
   );
