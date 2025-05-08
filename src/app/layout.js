@@ -1,18 +1,14 @@
 import './globals.css';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
   subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
 });
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata = {
   title: 'Baila',
   description: 'Your dance app landing page',
@@ -20,9 +16,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-purple-200 text-white min-h-screen flex flex-col`}
+        className={`  font-sans antialiased bg-purple-200  min-h-screen flex flex-col`}
       >
         {/* Header */}
         <header className="w-full bg-purple-300 flex items-center justify-between px-6 py-4">
