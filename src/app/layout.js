@@ -39,8 +39,8 @@ export default function RootLayout({ children }) {
             <Image
               src="/logo.png"
               alt="Baila Logo"
-              width={40}
-              height={40}
+              width={60}
+              height={60}
               className="transition duration-300 hover:invert cursor-pointer"
             />
           </Link>

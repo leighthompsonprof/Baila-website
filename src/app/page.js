@@ -9,13 +9,13 @@ export default function Home() {
 
   return (
     <div className="]">
-      <main className=" min-h-screen text-center ">
+      <main className="min-h-screen text-center text-black">
         <div className="flex flex-col items-center space-y-4">
-          <div className="flex items-center justify-center w-40 h-40">
+          <div className="flex items-center justify-center w-80 h-80">
             <img src="/logo.png" alt="Dancer" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-4xl font-bold">Seize the Dance!</h1>
-          <div className="mt-6 px-5 space-y-4 sm:w-full lg:w-1/2 text-left text-lg leading-relaxed">
+          <h1 className="text-4xl font-bold text-black">Seize the Dance!</h1>
+          <div className="mt-6 px-5 space-y-4 sm:w-full lg:w-1/2 text-left text-lg leading-relaxed text-black">
             <p>
               <span className="font-bold italic text-2xl">Baila!</span> is a mobile app designed for dance enthusiasts of all levels and styles —
               whether you're dancing solo in your living room, attending a ballroom class, taking a Zumba session, or enjoying a social dance event.
