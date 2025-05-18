@@ -1,6 +1,11 @@
-export async function POST(request) {
+exports.handler = async (event) => {
+  // Only allow POST
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: 'Method Not Allowed' };
+  }
+
   try {
-    const { email, firstName } = await request.json();
+    const { email, firstName } = JSON.parse(event.body);
 
     if (!process.env.MAILERLITE_API_KEY) {
       throw new Error('MailerLite API key is not configured');
@@ -25,19 +30,21 @@ export async function POST(request) {
       throw new Error('Failed to subscribe');
     }
 
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
+    return {
+      statusCode: 200,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-    });
+      body: JSON.stringify({ success: true })
+    };
   } catch (error) {
     console.error('Subscription error:', error.message);
-    return new Response(JSON.stringify({ error: 'Failed to subscribe' }), {
-      status: 500,
+    return {
+      statusCode: 500,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-    });
+      body: JSON.stringify({ error: 'Failed to subscribe' })
+    };
   }
-} 
+}; 
