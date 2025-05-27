@@ -25,7 +25,7 @@ export default function Home() {
               <p>The app lets users log their dance activity, including:</p>
               <ul className="list-disc list-inside mt-2 ml-4 text-base">
                 <li><strong>Type of event:</strong> lesson, social dance, rehearsal, or spontaneous dancing</li>
-                <li><strong>Dance style:</strong> freestyle, salsa, swing, line dance, Zumba</li>
+                <li><strong>Dance style:</strong> freestyle, salsa, swing, line dance, Zumba, etc</li>
                 <li><strong>Music source:</strong> DJ, live band, personal playlist, speaker, etc.</li>
               </ul>
             </div>

@@ -60,6 +60,9 @@ export default function RootLayout({ children }) {
               <a href="/privacy" className="hover:underline">
                 Privacy Policy
               </a>
+              <a href="/contact" className="hover:underline">
+                Contact Us
+              </a>
             </div>
             <p className="text-center sm:text-right">
               © {new Date().getFullYear()} Baila. All rights reserved.
