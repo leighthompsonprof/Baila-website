@@ -43,6 +43,9 @@ export default function RootLayout({ children }) {
         <footer className="w-full mt-10 py-6 bg-violet-600 text-sm">
           <div className="max-w-5xl mx-auto flex flex-col items-center sm:flex-row sm:justify-between px-6">
             <div className="flex space-x-4 mb-4 sm:mb-0">
+              <a href="/support" className="hover:underline">
+                Support
+              </a>
               <a href="/terms" className="hover:underline">
                 Terms & Conditions
               </a>
