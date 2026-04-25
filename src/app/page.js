@@ -14,7 +14,7 @@ export default function Home() {
           <div className="mt-6 px-5 space-y-4 sm:w-full lg:w-1/2 text-left text-lg leading-relaxed text-black">
             <p>
               <span className="font-bold italic text-2xl">Baila!</span> is a mobile app designed for dance enthusiasts of all levels and styles —
-              whether you're dancing solo in your living room, attending a ballroom class, taking a Zumba session, or enjoying a social dance event.
+              whether you're dancing solo in your living room, attending a ballroom class, taking a Zumba session, performing, or enjoying a social dance event.
             </p>
 
             <div>
@@ -22,12 +22,12 @@ export default function Home() {
               <ul className="list-disc list-inside mt-2 ml-4 text-base">
                 <li><strong>Type of event:</strong> lesson, social dance, rehearsal, or spontaneous dancing</li>
                 <li><strong>Dance style:</strong> freestyle, salsa, swing, line dance, Zumba, etc.</li>
-                <li><strong>Music source:</strong> DJ, live band, personal playlist, speaker, etc.</li>
+                <li>Follow their dancing friends</li>
               </ul>
             </div>
 
             <p>
-              Users can track their experiences through a <strong>visual dance journal</strong>, build a personal record over time, and follow or be followed by other dancers in the community.
+              Users can track their dancing (&quot;my stage&quot;), build a personal record over time, and follow or be followed by other dancers in the community.
             </p>
 
             <p>
