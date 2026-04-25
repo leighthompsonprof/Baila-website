@@ -1,10 +1,6 @@
 'use client';
 
-import { useState } from "react";
-import WaitlistModal from "@/components/WaitlistModal";
-
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const appStoreUrl = 'https://apps.apple.com/us/app/baila-dance-tracker/id6759945813';
 
   return (
@@ -48,29 +44,18 @@ export default function Home() {
               href={appStoreUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-2xl bg-black px-6 py-3 text-white shadow-md transition-all duration-200 hover:scale-105 hover:shadow-lg"
+              className="inline-flex transition-transform duration-200 hover:scale-105"
               aria-label="Download Baila on the App Store"
             >
-              <span className="flex flex-col text-left leading-tight">
-                <span className="text-xs uppercase tracking-wide text-gray-300">Download on the</span>
-                <span className="text-lg font-semibold">App Store</span>
-              </span>
+              <img
+                src="/app-store-badge.svg"
+                alt="Download on the App Store"
+                className="h-[52px] w-auto"
+              />
             </a>
-
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="px-6 py-3 rounded-2xl bg-purple-700 text-white font-semibold shadow-md hover:bg-purple-800 transition-all duration-200 hover:scale-105 hover:shadow-lg"
-            >
-              Join the Waitlist
-            </button>
           </div>
         </div>
       </main>
-
-      <WaitlistModal 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </div>
   );
 }
